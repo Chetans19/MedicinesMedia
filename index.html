@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medicines web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <meta name="viewport" content="width=devic-ewidth", initial-scale=1.0 >
+   <script src="script.js">
+   
+   </script>
+</head>
+<body>
+
+	<ul> 
+    
+		<div class="right" >
+	   <li> <a class="active" href="#"> Home </a></li>	
+	   <li> <a href="#"> Sell medicines </a></li>
+	   <li> <a href="login.html"> LogIn </a></li>
+	   <li> <a href="#"> SignUp </a></li>
+	   <li> <a href="#"> About </a></li>
+	   <li> <a href="#"> Contact Us </a></li>
+         </div>
+	</ul>
+
+  <div class="slideshow-container" >
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://ebpcooh.org.uk/wp-content/uploads/open-up-about-medicines.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://as1.ftcdn.net/jpg/02/06/01/14/500_F_206011478_Hj1ifuSrdPVrEP5o750yYWzTByKPqGqy.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://static-news.moneycontrol.com/static-mcnews/2017/02/Pharma_drugs_cadila_sun_pharma-630x420.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+  <!-- <div class="mySlides fade">
+   	<div class="numbertext">1 / 3</div>
+   		<img src="https://ebpcooh.org.uk/wp-content/uploads/open-up-about-medicines.jpg" width="100%" >
+   	<div class="text">Caption Text</div>
+   </div>
+
+   <div class="mySlides fade">
+   <div class="numbertext" >2 / 3 </div>
+   <img src="https://as1.ftcdn.net/jpg/02/06/01/14/500_F_206011478_Hj1ifuSrdPVrEP5o750yYWzTByKPqGqy.jpg" width="100%">
+   <div class="text" >Caption Text </div>
+   </div>
+
+   <div class="mySlides fade">
+   	<div class="numbertext">3 / 3</div>
+   	<img src="https://static-news.moneycontrol.com/static-mcnews/2017/02/Pharma_drugs_cadila_sun_pharma-630x420.jpg" width="100%">
+   	<div class="text" >Caption Text</div>
+   </div>
+
+   <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
